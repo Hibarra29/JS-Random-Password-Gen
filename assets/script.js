@@ -32,18 +32,18 @@ var characterTypes = function() {
     pass
   }
 }
-  var length = parseInt(prompt("How many characters would you like the password to include?"));
-  console.log(length)
-  if (length < 8){
+  var lengthh = parseInt(prompt("How many characters would you like the password to include?"));
+  console.log(lengthh)
+  if (lengthh < 8){
     console.log('length is less then 8')
     alert('password must be greater then 8')
     return
   }
-  if (length > 128) {
+  if (lengthh > 128) {
     alert('password must be less then 128')
     return
   }
-  if (isNaN(length)) {
+  if (isNaN(lengthh)) {
     alert("Please put a number")
     return
   }
@@ -79,18 +79,19 @@ var characterTypes = function() {
       possibleCharacters = possibleCharacters.concat(specialCharacters);
    }
   
-
+//Forloop
 
 let finalPassword = ""
-for (var i = 0; i <= length; i++) {
+for (let i = 0; i < lengthh; i++) {
   let rng =[Math.floor(Math.random() * possibleCharacters.length)];
   
   finalPassword = finalPassword + possibleCharacters[rng];
-
-return finalPassword;
 }
 
+return finalPassword;
 };
+
+
 
 
 
