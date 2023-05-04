@@ -83,7 +83,7 @@ var characterTypes = function() {
 
 let finalPassword = ""
 for (var i = 0; i <= length; i++) {
-  let length =[Math.floor(Math.random() * possibleCharacters.length)];
+  let rng =[Math.floor(Math.random() * possibleCharacters.length)];
   
   finalPassword = finalPassword + possibleCharacters[rng];
 
